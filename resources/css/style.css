@@ -214,25 +214,19 @@ ul {
     transition: all 0.5s;
     font: 0.9rem;
     opacity: 75%;
+    margin: 5px;
 }
 
-.project1:hover{
-    opacity: 100%;
-    background-color: transparent;
-}
-
-.project2:hover, .project3:hover, .project4:hover, .project5:hover {
-    opacity: 100%;
-}
-
-.grid-item:first-child {
-    grid-column: span 8;
-}
 
 .project1 {
+    grid-column: span 8;
     background-image: url('./img/run-buddy.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.project1 h3 {
+    padding: 0 0 0 30px;
 }
 
 .project2, .project3, .project4, .project5 {
@@ -240,6 +234,15 @@ ul {
     padding: 0 0 0 10px;
 }
 
+.project1:hover{
+    opacity: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.project2:hover, .project3:hover, .project4:hover, .project5:hover {
+    opacity: 100%;
+}
 /* ------------------------------------------------------- */
 /* Testimonials */
 /* ------------------------------------------------------- */
