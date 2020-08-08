@@ -1,5 +1,3 @@
-/* Orange color #e67e22 */
-
 /* ------------------------------------------------------- */
 /* Basic Setup */
 /* ------------------------------------------------------- */
@@ -18,6 +16,10 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+}
+
+:root {
+    --primary:#7f1eda;
 }
 
 /* ------------------------------------------------------- */
@@ -56,8 +58,8 @@ h1 {
 
 .btn-full:link,
 .btn-full:visited {
-    background-color: #7f1eda;
-    border: 1px solid #7f1eda;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
     color: #fff;
     margin-right: 15px;
 }
@@ -93,7 +95,6 @@ header {
 }
 
 nav {
-    float: left;
     list-style: none;
     height: 48px;
     background: rgba(0,0,0,0.8);
@@ -107,10 +108,11 @@ nav {
 .main-nav {
     width: 1140px;
     margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .main-nav li {
-    display: inline-block;
     margin-right: 80px;
 }
 
@@ -131,9 +133,9 @@ nav {
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* ------------------------------------------------------- */
@@ -165,7 +167,7 @@ ul {
     line-height: 1.5em;
 }
 
-.photo {
+.headshot {
     height: 300px;
     width: auto;
     padding: 30px 0 0 0;
@@ -181,17 +183,61 @@ ul {
     background-color: #f4f4f4;
 }
 
-.project {
-    width: 33%;
-    display: inline-block;
-    vertical-align: top;
-}
-
 .project-title {
     padding: 30px 0 0 0;
     font-weight: 300;
     text-align: center;
     letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(150px, 1fr);
+    padding: 30px 0 30px 0;
+}
+
+.grid-item {
+    border: 5px solid #6e1abc;
+    grid-column: span 4;
+    background-color: var(--primary);
+    color: white;
+    min-height: 150px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150px;
+    transition: all 0.5s;
+    font: 0.9rem;
+    opacity: 75%;
+}
+
+.project1:hover{
+    opacity: 100%;
+    background-color: transparent;
+}
+
+.project2:hover, .project3:hover, .project4:hover, .project5:hover {
+    opacity: 100%;
+}
+
+.grid-item:first-child {
+    grid-column: span 8;
+}
+
+.project1 {
+    background-image: url('./img/run-buddy.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project2, .project3, .project4, .project5 {
+    display: inline;
+    padding: 0 0 0 10px;
 }
 
 /* ------------------------------------------------------- */
@@ -199,11 +245,35 @@ ul {
 /* ------------------------------------------------------- */
 
 #testimonials div q {
-    padding: 20px 0 0 0;
+    padding: 30px 0 0 0;
     display: block;
 }
 
 #testimonials div cite {
     padding: 20px 0 30px 0;
     display: block;
+}
+
+/* ------------------------------------------------------- */
+/* Contact */
+/* ------------------------------------------------------- */
+
+#contact {
+    background-color: #f4f4f4;
+}
+
+#contact div ul {
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact div ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#contact div ul li a:hover {
+    text-decoration: underline;
+    color: blue;
 }
