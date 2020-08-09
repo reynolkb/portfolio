@@ -1,11 +1,14 @@
-/* ------------------------------------------------------- */
-/* Basic Setup */
-/* ------------------------------------------------------- */
+/* Applies to all */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --primary:#7f1eda;
+    --dark-primary:#6e1abc;
 }
 
 html {
@@ -18,22 +21,63 @@ html {
     scroll-behavior: smooth;
 }
 
-:root {
-    --primary:#7f1eda;
+section {
+    padding: 60px;
 }
 
-/* ------------------------------------------------------- */
-/* REUSEABLE COMPONENTS */
-/* ------------------------------------------------------- */
-
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
+/* Header and Navigation Section */
+header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    background: rgba(0,0,0,1);
+	background-attachment: fixed;
+    z-index: 9999;
+    padding: 5px 0 7.5px 0;
 }
 
-/* HEADINGS */
+header nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    list-style: none;
+}
 
-h1 {
+header nav ul li a {
+    margin: 0 50px 0 50px;
+    color: white;
+	padding: 10px 15px;
+	font-weight: lighter;
+	font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Hero section */
+.hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../css/img/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	background-attachment: fixed;
+    height: 900px;
+}
+
+.hero-text-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+}
+
+.hero-text-box h1 {
     margin: 0;
     margin-bottom: 20px;
     color: white;
@@ -44,106 +88,28 @@ h1 {
     word-spacing: 4px;
 }
 
-/* BUTTONS */
-
 .btn:link,
 .btn:visited {
-    display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-.btn-full:link,
-.btn-full:visited {
     background-color: var(--primary);
     border: 1px solid var(--primary);
     color: #fff;
     margin-right: 15px;
+    width: 28%;
 }
 
-.btn:hover,
-.btn:active {
+.btn:hover {
     background-color: #6e1abc;
-}
-
-.btn-full:hover,
-.btn-full:active {
     border: 1px solid #6e1abc;
 }
 
-/* ------------------------------------------------------- */
-/* HEADER */
-/* ------------------------------------------------------- */
-
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../css/img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed;
-}
-
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-nav {
-    list-style: none;
-    height: 48px;
-    background: rgba(0,0,0,0.8);
-    position: fixed;
-    width: 100%;
-    padding: 10px 0 0 0;
-    z-index: 10;
-    backdrop-filter: saturate(180%) blur(20px);
-}
-
-.main-nav {
-    width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.main-nav li {
-    margin-right: 80px;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-    padding: 8px 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-    border-bottom: 2px solid white;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* ------------------------------------------------------- */
-/* ABOUT */
-/* ------------------------------------------------------- */
-
+/* About section */
 .section-title {
-    padding: 50px 0 0 0;
+    padding: 10px 0 0 0;
     font-weight: 300;
     text-align: center;
     letter-spacing: 1px;
@@ -175,9 +141,11 @@ ul {
     display: block;
 }
 
-/* ------------------------------------------------------- */
-/* Projects */
-/* ------------------------------------------------------- */
+.about-text {
+    margin: 0 400px;
+}
+
+/* Project Section */
 
 #projects {
     background-color: #f4f4f4;
@@ -197,6 +165,7 @@ ul {
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(150px, 1fr);
     padding: 30px 0 30px 0;
+    margin: 0 200px;
 }
 
 .grid-item {
@@ -243,18 +212,20 @@ ul {
 .project2:hover, .project3:hover, .project4:hover, .project5:hover {
     opacity: 100%;
 }
-/* ------------------------------------------------------- */
-/* Testimonials */
-/* ------------------------------------------------------- */
 
-#testimonials div q {
+/* Testimonials Section */
+.quote {
     padding: 30px 0 0 0;
     display: block;
 }
 
-#testimonials div cite {
+.cite {
     padding: 20px 0 30px 0;
     display: block;
+}
+
+.quote, .cite {
+    margin: 0 200px;
 }
 
 /* ------------------------------------------------------- */
@@ -265,18 +236,77 @@ ul {
     background-color: #f4f4f4;
 }
 
-#contact div ul {
+.contact-list {
     padding: 30px 0 30px 0;
     display: flex;
     justify-content: space-evenly;
 }
 
-#contact div ul li a {
+.contact-list-item {
+    list-style: none;
     text-decoration: none;
     color: black;
 }
 
-#contact div ul li a:hover {
+.contact-list-item:hover {
     text-decoration: underline;
     color: blue;
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+    header nav ul li a {
+        margin: 0 25px 0 25px;
+        font-size: 2.5vw;
+    }
+
+    .btn:link,
+    .btn:visited {
+        width: 30%;
+    }
+    
+    .about-text {
+        margin: 0;
+        font-size: 70%;
+    }
+
+    .grid-container {
+        margin: 0;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .project2, .project3, .project4, .project5 {
+        grid-column: span 3;
+    }
+    
+    .grid-container h3 {
+        font-size: 100%;
+    }
+
+    .grid-container h5 {
+        font-size: 70%;
+    }
+
+    .quote, .cite {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header nav ul li a {
+        margin: 0 10px 0 10px;
+    }
+
+    .hero-text-box h1 {
+        font-size: 150%;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        width: 70%;
+    }
+    
+    .project2, .project3, .project4, .project5 {
+        grid-column: 1 / -1;
+    }
 }

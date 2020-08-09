@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Kyle's Portfolio</title>
 
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css" />
@@ -21,113 +22,111 @@
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
+	</header>
+
+	<!-- hero section -->
+	<section class="hero">
 		<div class="hero-text-box">
 			<h1>
 				Hi, I'm Kyle.<br />Welcome to my
 				portfolio.
 			</h1>
-			<a class="btn btn-full" href="#about">Learn about me</a>
+			<a class="btn" href="#about">Learn about me</a>
 		</div>
-	</header>
+	</section>
 
 	<!-- About -->
 	<section id="about">
-		<div class="row">
-			<h2 class="section-title">About Me</h2>
-			<img src="./resources/css/img/headshot.jpg" alt="Headshot" class="headshot" />
-			<h4 class="section-text">
-				Full Stack Web Developer with over 5 years of experience with SaaS applications.<br />
-				Experienced in delivering custom JavaScript, HTML, and CSS requests for client projects.<br />
-				Knowledgeable about handling complex project assessments and technical systems implementations.
-			</h4>
-		</div>
+		<h2 class="section-title">About Me</h2>
+		<img src="./resources/css/img/headshot.jpg" alt="Headshot" class="headshot" />
+		<h4 class="section-text about-text">
+			Full Stack Web Developer with over 5 years of experience with SaaS applications.<br />
+			Experienced in delivering custom JavaScript, HTML, and CSS requests for client projects.<br />
+			Knowledgeable about handling complex project assessments and technical systems implementations.
+		</h4>
 	</section>
 
 	<!-- Projects -->
 	<section id="projects">
-		<div class="row">
-			<h2 class="section-title">Projects</h2>
-			<div class="grid-container">
-				<a class="grid-item project1" href="https://reynolkb.github.io/run-buddy/" target="_blank">
-					<h3 class="project-title">Run Buddy</h3>
-				</a>
-				<div class="grid-item project2">
-					<h3 class="project-title">Cloud Innovation</h3>
-					<h5 class="section-text">
-						Built custom JavaScript to display an alert if more then 3 values were selected for a
-						multi-select
-						picklist.<br /><br />
-						Reviewed JavaScript code with the client and taught them how to change the max values selected
-						and
-						how to add it to different fields.
-					</h5>
-				</div>
-				<div class="grid-item project3">
-					<h3 class="project-title">Construction-Dodge</h3>
-					<h5 class="section-text">
-						Met with internal Support Engineer to write custom CSS to format the form into a grid so users
-						could
-						submit timesheets.<br /><br />
-						Utilized the width property to force each row into multiple columns.
-					</h5>
-				</div>
-				<div class="grid-item project4">
-					<h3 class="project-title">Jewish Federation of Greater Atlanta</h3>
-					<h5 class="section-text">
-						Worked with an internal Software Developer to create custom JavaScript to display a popup
-						message upon form submission contingent upon values selected in previous fields.<br /><br />
-						Led training call with client to walk them through the custom JavaScript so they could reuse it
-						on future forms.
-					</h5>
-				</div>
-				<div class="grid-item project5">
-					<h3 class="project-title">Coming Soon!</h3>
-				</div>
+		<h2 class="section-title">Projects</h2>
+		<div class="grid-container">
+			<a class="grid-item project1" href="https://reynolkb.github.io/run-buddy/" target="_blank">
+				<h3 class="project-title">Run Buddy</h3>
+			</a>
+			<div class="grid-item project2">
+				<h3 class="project-title">Cloud Innovation</h3>
+				<h5 class="section-text">
+					Built custom JavaScript to display an alert if more then 3 values were selected for a
+					multi-select
+					picklist.<br /><br />
+					Reviewed JavaScript code with the client and taught them how to change the max values selected
+					and
+					how to add it to different fields.
+				</h5>
+			</div>
+			<div class="grid-item project3">
+				<h3 class="project-title">Construction-Dodge</h3>
+				<h5 class="section-text">
+					Met with internal Support Engineer to write custom CSS to format the form into a grid so users
+					could
+					submit timesheets.<br /><br />
+					Utilized the width property to force each row into multiple columns.
+				</h5>
+			</div>
+			<div class="grid-item project4">
+				<h3 class="project-title">Jewish Federation of Greater Atlanta</h3>
+				<h5 class="section-text">
+					Worked with an internal Software Developer to create custom JavaScript to display a popup
+					message upon form submission contingent upon values selected in previous fields.<br /><br />
+					Led training call with client to walk them through the custom JavaScript so they could reuse it
+					on future forms.
+				</h5>
+			</div>
+			<div class="grid-item project5">
+				<h3 class="project-title">Coming Soon!</h3>
 			</div>
 		</div>
 	</section>
 
 	<!-- Testimonials -->
 	<section id="testimonials">
-		<div class="row">
-			<h2 class="section-title">Testimonials</h2>
-			<q class="section-text">
-				Kyle Reynolds went above and beyond to help us create a custom experience for our users using FormStack.
-				Not only did he create this unique user experience, he also took time and care to empower our Marketing
-				team, who have no experience with code, how to update and adjust for future functionality with easy to
-				follow instructions. Kyle’s work created a custom product that functioned the way we need and enables us
-				to use it in many instances to come.
-			</q>
-			<cite>&nbsp;&nbsp;&nbsp;&nbsp;- Robin Glaubman | Marketing Manager | Jewish Federation of Greater
-				Atlanta</cite>
-			<q class="section-text">
-				At Bon Accord Care, we have a specific requirement for input validation in certain fields in a
-				number of our forms. Although this is not a standard feature in the Formstack for Salesforce
-				App, the Pro Service team, namely Kyle Reynolds, assisted us in creating a piece of JS code to
-				meet our requirement. This has helped our teams gather required information from our customers
-				at form submission leading to reduced call backs and admin errors.
-			</q>
-			<cite>&nbsp;&nbsp;&nbsp;&nbsp;- Jan Cervenka | Management Information Systems Manager | Bon Accord</cite>
-			<q class="section-text">
-				The team at Formstack always offers great support and respond in a timely manner. We had a request on
-				one of the forms we implemented for a client that required a SortOrder requirement build in JavaScript.
-				Kyle and Professional Services team were able to build this for us and exceed our expectations! They
-				will forever be a recommended partner to us.
-			</q>
-			<cite>&nbsp;&nbsp;&nbsp;&nbsp;- Gita Kulkarni | President | Avinta Services</cite>
-		</div>
+		<h2 class="section-title">Testimonials</h2>
+		<q class="section-text quote">
+			Kyle Reynolds went above and beyond to help us create a custom experience for our users using FormStack.
+			Not only did he create this unique user experience, he also took time and care to empower our Marketing
+			team, who have no experience with code, how to update and adjust for future functionality with easy to
+			follow instructions. Kyle’s work created a custom product that functioned the way we need and enables us
+			to use it in many instances to come.
+		</q>
+		<cite class="cite">&nbsp;&nbsp;&nbsp;&nbsp;- Robin Glaubman | Marketing Manager | Jewish Federation of Greater
+			Atlanta</cite>
+		<q class="section-text quote">
+			At Bon Accord Care, we have a specific requirement for input validation in certain fields in a
+			number of our forms. Although this is not a standard feature in the Formstack for Salesforce
+			App, the Pro Service team, namely Kyle Reynolds, assisted us in creating a piece of JS code to
+			meet our requirement. This has helped our teams gather required information from our customers
+			at form submission leading to reduced call backs and admin errors.
+		</q>
+		<cite class="cite">&nbsp;&nbsp;&nbsp;&nbsp;- Jan Cervenka | Management Information Systems Manager | Bon
+			Accord</cite>
+		<q class="section-text quote">
+			The team at Formstack always offers great support and respond in a timely manner. We had a request on
+			one of the forms we implemented for a client that required a SortOrder requirement build in JavaScript.
+			Kyle and Professional Services team were able to build this for us and exceed our expectations! They
+			will forever be a recommended partner to us.
+		</q>
+		<cite class="cite">&nbsp;&nbsp;&nbsp;&nbsp;- Gita Kulkarni | President | Avinta Services</cite>
 	</section>
 
 	<!-- Contact -->
 	<section id="contact">
-		<div class="row">
-			<h2 class="section-title">Contact</h2>
-			<ul>
-				<li><a href="mailto:kyle.reynolds9146@gmail.com">Email</a></li>
-				<li><a href="https://www.linkedin.com/in/kyle-b-reynolds/" target="_blank">LinkedIn</a></li>
-				<li><a href="https://github.com/reynolkb" target="_blank">GitHub</a></li>
-			</ul>
-		</div>
+		<h2 class="section-title">Contact</h2>
+		<ul class="contact-list">
+			<li class="contact-list-item"><a href="mailto:kyle.reynolds9146@gmail.com">Email</a></li>
+			<li class="contact-list-item"><a href="https://www.linkedin.com/in/kyle-b-reynolds/"
+					target="_blank">LinkedIn</a></li>
+			<li class="contact-list-item"><a href="https://github.com/reynolkb" target="_blank">GitHub</a></li>
+		</ul>
 	</section>
 </body>
 
