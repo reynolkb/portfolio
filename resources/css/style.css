@@ -254,10 +254,11 @@ header nav ul li a:hover {
 }
 
 /* Mobile */
-@media screen and (max-width: 1024px) and (max-device-width: 1024px) {    
+@media screen and (max-width: 1024px) {    
     header nav ul li a {
         margin: 0 25px 0 25px;
         font-size: 2.5vw;
+        color: white;
     }
 
     .btn:link,
@@ -292,9 +293,19 @@ header nav ul li a:hover {
     }
 }
 
-@media screen and (max-width: 575px) and (max-device-width: 575px) {
+@media screen and (max-width: 425px) {
     header nav ul li a {
+        font-size: 5vw;
         margin: 0 10px 0 10px;
+        color: white;
+    }
+
+    .hero {
+        height: 450px;
+    }
+
+    .hero-text-box {
+        margin-top: 80px;
     }
 
     .hero-text-box h1 {
@@ -304,39 +315,6 @@ header nav ul li a:hover {
     .btn:link,
     .btn:visited {
         width: 70%;
-    }
-    
-    .project2, .project3, .project4, .project5 {
-        grid-column: 1 / -1;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    header {
-        justify-content: center;
-        position: relative;
-    }
-
-    header nav ul li a {
-        font-size: 5vw;
-        margin: 0;
-    }
-
-    .hero {
-        height: 450px;
-    }
-
-    .hero-text-box {
-        margin-top: 100px;
-    }
-
-    .hero-text-box h1 {
-        font-size: 150%;
-    }
-    
-    .btn:link,
-    .btn:visited {
-        width: 80%;
     }
     
     .project2, .project3, .project4, .project5 {
