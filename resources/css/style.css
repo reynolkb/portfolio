@@ -67,7 +67,7 @@ header nav ul li a:hover {
 	flex-wrap: wrap;
 	align-items: flex-start;
 	background-attachment: fixed;
-    height: 900px;
+    height: 1000px;
 }
 
 .hero-text-box {
@@ -265,6 +265,10 @@ header nav ul li a:hover {
     .btn:visited {
         width: 30%;
     }
+
+    .hero {
+        height: 900px;
+    }
     
     .about-text {
         margin: 0;
@@ -303,7 +307,7 @@ header nav ul li a:hover {
     }
 
     .hero {
-        height: 450px;
+        height: 500px;
     }
 
     .hero-text-box {
