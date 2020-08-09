@@ -296,8 +296,11 @@ header nav ul li a:hover {
 @media screen and (max-width: 425px) {
     header nav ul li a {
         font-size: 5vw;
-        margin: 0 10px 0 10px;
+        font-weight: 400;
+        margin: 0 20px 0 20px;
         color: white;
+        padding: 0;
+        text-shadow: none;
     }
 
     .hero {
