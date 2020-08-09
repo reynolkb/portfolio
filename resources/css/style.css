@@ -227,10 +227,7 @@ header nav ul li a:hover {
     margin: 0 200px;
 }
 
-/* ------------------------------------------------------- */
 /* Contact */
-/* ------------------------------------------------------- */
-
 #contact {
     background-color: #f4f4f4;
 }
@@ -268,6 +265,8 @@ header nav ul li a:hover {
 
     .hero {
         height: 900px;
+        background-size: cover;
+        background-position: center;
     }
     
     .about-text {
@@ -307,11 +306,13 @@ header nav ul li a:hover {
     }
 
     .hero {
-        height: 500px;
+        background-size: cover;
+        background-position: center;
+        height: 900px;
     }
 
     .hero-text-box {
-        margin-top: 80px;
+        margin-top: 250px;
     }
 
     .hero-text-box h1 {
@@ -322,7 +323,7 @@ header nav ul li a:hover {
     .btn:visited {
         width: 70%;
     }
-    
+
     .project2, .project3, .project4, .project5 {
         grid-column: 1 / -1;
     }
