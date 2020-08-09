@@ -310,3 +310,35 @@ header nav ul li a:hover {
         grid-column: 1 / -1;
     }
 }
+
+@media screen and (max-width: 375px) {
+    header nav ul li a {
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    .hero {
+        height: 450px;
+    }
+
+    .hero-text-box {
+        margin-top: 100px;
+    }
+
+    .hero-text-box h1 {
+        font-size: 150%;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        width: 80%;
+    }
+    
+    .project2, .project3, .project4, .project5 {
+        grid-column: 1 / -1;
+    }
+
+    .cite, .quote {
+        font-size: 80%;
+    }
+}
