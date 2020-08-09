@@ -254,7 +254,7 @@ header nav ul li a:hover {
 }
 
 /* Mobile */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (max-device-width: 1024px) {
     header nav ul li a {
         margin: 0 25px 0 25px;
         font-size: 2.5vw;
@@ -292,7 +292,7 @@ header nav ul li a:hover {
     }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 575px) and (max-device-width: 575px) {
     header nav ul li a {
         margin: 0 10px 0 10px;
     }
@@ -311,7 +311,7 @@ header nav ul li a:hover {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) and (max-device-width: 375px) {
     header nav ul li a {
         font-size: 5vw;
         margin: 0;
