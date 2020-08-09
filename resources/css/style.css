@@ -332,3 +332,10 @@ header nav ul li a:hover {
         font-size: 80%;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .btn:link,
+    .btn:visited {
+        width: 80%;
+    }
+}
