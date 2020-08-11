@@ -1,28 +1,28 @@
 /* Applies to all */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
-    --primary:#7f1eda;
-    --dark-primary:#6e1abc;
+	--primary: #7f1eda;
+	--dark-primary: #6e1abc;
 }
 
 html {
-    background-color: white;
-    color: #555;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
-    scroll-behavior: smooth;
+	background-color: white;
+	color: #555;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
 }
 
 section {
-    padding: 60px;
+	padding: 60px;
 }
 
 /* Header and Navigation Section */
@@ -30,36 +30,40 @@ header {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-    background: rgba(0,0,0,1);
+	background: rgba(0, 0, 0, 1);
 	background-attachment: fixed;
-    z-index: 9999;
-    padding: 5px 0 7.5px 0;
+	z-index: 9999;
+	padding: 5px 0 7.5px 0;
 }
 
 header nav ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-    list-style: none;
+	list-style: none;
 }
 
 header nav ul li a {
-    margin: 0 50px 0 50px;
-    color: white;
+	margin: 0 50px 0 50px;
+	color: white;
 	padding: 10px 15px;
 	font-weight: lighter;
 	font-size: 1.55vw;
-    text-decoration: none;
+	text-decoration: none;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
-    color: white;
+	text-decoration: underline;
+	color: white;
 }
 
 /* Hero section */
 .hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../css/img/hero.jpg);
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url(../css/img/hero.jpg);
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -67,275 +71,289 @@ header nav ul li a:hover {
 	flex-wrap: wrap;
 	align-items: flex-start;
 	background-attachment: fixed;
-    height: 1000px;
+	height: 1000px;
 }
 
 .hero-text-box {
-    display: flex;
-    flex-direction: column;
-    margin-top: 300px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 300px;
 }
 
 .hero-text-box h1 {
-    margin: 0;
-    margin-bottom: 20px;
-    color: white;
-    font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 4px;
+	margin: 0;
+	margin-bottom: 20px;
+	color: white;
+	font-size: 240%;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 4px;
 }
 
 .btn:link,
 .btn:visited {
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-    background-color: var(--primary);
-    border: 1px solid var(--primary);
-    color: #fff;
-    margin-right: 15px;
-    width: 28%;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+	background-color: var(--primary);
+	border: 1px solid var(--primary);
+	color: #fff;
+	margin-right: 15px;
+	width: 28%;
 }
 
 .btn:hover {
-    background-color: #6e1abc;
-    border: 1px solid #6e1abc;
+	background-color: #6e1abc;
+	border: 1px solid #6e1abc;
 }
 
 /* About section */
 .section-title {
-    padding: 10px 0 0 0;
-    font-weight: 300;
-    text-align: center;
-    letter-spacing: 1px;
+	padding: 10px 0 0 0;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 1px;
 }
 
 .section-title:after {
-    display: block;
-    height: 2px;
-    background-color: #555;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 5px;
+	display: block;
+	height: 2px;
+	background-color: #555;
+	content: ' ';
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 5px;
 }
 
 .section-text {
-    padding: 30px 0 30px 0;
-    font-weight: 300;
-    letter-spacing: 1px;
-    word-spacing: 4px;
-    line-height: 1.5em;
+	padding: 30px 0 30px 0;
+	font-weight: 300;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+	line-height: 1.5em;
 }
 
 .headshot {
-    height: 300px;
-    width: auto;
-    padding: 30px 0 0 0;
-    margin: 0 auto;
-    display: block;
+	height: 300px;
+	width: auto;
+	padding: 30px 0 0 0;
+	margin: 0 auto;
+	display: block;
 }
 
 .about-text {
-    margin: 0 400px;
+	margin: 0 400px;
 }
 
 /* Project Section */
 
 #projects {
-    background-color: #f4f4f4;
+	background-color: #f4f4f4;
 }
 
 .project-title {
-    padding: 30px 0 0 0;
-    font-weight: 300;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 1.6rem;
+	padding: 30px 0 0 0;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 1.6rem;
 }
 
 .grid-container {
-    display: grid;
-    grid-auto-flow: dense;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(150px, 1fr);
-    padding: 30px 0 30px 0;
-    margin: 0 200px;
+	display: grid;
+	grid-auto-flow: dense;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-rows: minmax(150px, 1fr);
+	padding: 30px 0 30px 0;
+	margin: 0 200px;
 }
 
 .grid-item {
-    border: 5px solid #6e1abc;
-    grid-column: span 4;
-    background-color: var(--primary);
-    color: white;
-    min-height: 150px;
-    display: flex;
-    align-items: flex-end;
-    padding: 0 0 20px 0;
-    text-decoration: none;
-    background-blend-mode: soft-light;
-    background-size: 150px;
-    transition: all 0.5s;
-    font: 0.9rem;
-    opacity: 75%;
-    margin: 5px;
+	border: 5px solid #6e1abc;
+	grid-column: span 4;
+	background-color: var(--primary);
+	color: white;
+	min-height: 150px;
+	display: flex;
+	align-items: flex-end;
+	padding: 0 0 20px 0;
+	text-decoration: none;
+	background-blend-mode: soft-light;
+	background-size: 150px;
+	transition: all 0.5s;
+	font: 0.9rem;
+	opacity: 75%;
+	margin: 5px;
 }
 
-
 .project1 {
-    grid-column: span 8;
-    background-image: url('./img/run-buddy.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+	grid-column: span 8;
+	background-image: url('./img/run-buddy.png');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .project1 h3 {
-    padding: 0 0 0 30px;
+	padding: 0 0 0 30px;
 }
 
-.project2, .project3, .project4, .project5 {
-    display: inline;
-    padding: 0 0 0 10px;
+.project2,
+.project3,
+.project4,
+.project5 {
+	display: inline;
+	padding: 0 0 0 10px;
 }
 
-.project1:hover{
-    opacity: 100%;
-    background-color: transparent;
-    cursor: pointer;
+.project1:hover {
+	opacity: 100%;
+	background-color: transparent;
+	cursor: pointer;
 }
 
-.project2:hover, .project3:hover, .project4:hover, .project5:hover {
-    opacity: 100%;
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover {
+	opacity: 100%;
 }
 
 /* Testimonials Section */
 .quote {
-    padding: 30px 0 0 0;
-    display: block;
+	padding: 30px 0 0 0;
+	display: block;
 }
 
 .cite {
-    padding: 20px 0 30px 0;
-    display: block;
+	padding: 20px 0 30px 0;
+	display: block;
 }
 
-.quote, .cite {
-    margin: 0 200px;
+.quote,
+.cite {
+	margin: 0 200px;
 }
 
 /* Contact */
 #contact {
-    background-color: #f4f4f4;
+	background-color: #f4f4f4;
 }
 
 .contact-list {
-    padding: 30px 0 30px 0;
-    display: flex;
-    justify-content: space-evenly;
+	padding: 30px 0 30px 0;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .contact-list-item {
-    list-style: none;
-    text-decoration: none;
-    color: black;
+	list-style: none;
+	text-decoration: none;
+	color: black;
 }
 
 .contact-list-item:hover {
-    text-decoration: underline;
-    color: blue;
+	text-decoration: underline;
+	color: blue;
 }
 
 /* Mobile */
-@media screen and (max-width: 1024px) {    
-    header nav ul li a {
-        margin: 0 25px 0 25px;
-        font-size: 2.5vw;
-        color: white;
-        font-weight: 300;
-    }
+@media screen and (max-width: 1024px) {
+	header nav ul li a {
+		margin: 0 25px 0 25px;
+		font-size: 2.5vw;
+		color: white;
+		font-weight: 300;
+	}
 
-    .btn:link,
-    .btn:visited {
-        width: 30%;
-    }
+	.btn:link,
+	.btn:visited {
+		width: 30%;
+	}
 
-    .hero {
-        height: 900px;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .about-text {
-        margin: 0;
-        font-size: 70%;
-    }
+	.hero {
+		height: 900px;
+		background-size: cover;
+		background-position: center;
+	}
 
-    .grid-container {
-        margin: 0;
-        grid-template-columns: repeat(6, 1fr);
-    }
+	.about-text {
+		margin: 0;
+		font-size: 70%;
+	}
 
-    .project2, .project3, .project4, .project5 {
-        grid-column: span 3;
-    }
-    
-    .grid-container h3 {
-        font-size: 100%;
-    }
+	.grid-container {
+		margin: 0;
+		grid-template-columns: repeat(6, 1fr);
+	}
 
-    .grid-container h5 {
-        font-size: 70%;
-    }
+	.project2,
+	.project3,
+	.project4,
+	.project5 {
+		grid-column: span 3;
+	}
 
-    .quote, .cite {
-        margin: 0;
-    }
+	.grid-container h3 {
+		font-size: 100%;
+	}
+
+	.grid-container h5 {
+		font-size: 70%;
+	}
+
+	.quote,
+	.cite {
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 425px) {
-    header nav ul li a {
-        font-size: 5vw;
-        font-weight: 300;
-        margin: 0 20px 0 20px;
-        color: white;
-        padding: 0;
-    }
+	header nav ul li a {
+		font-size: 5vw;
+		font-weight: 300;
+		margin: 0 20px 0 20px;
+		color: white;
+		padding: 0;
+	}
 
-    .hero {
-        background-size: cover;
-        background-position: center;
-        height: 900px;
-    }
+	.hero {
+		background-size: cover;
+		background-position: center;
+		height: 900px;
+	}
 
-    .hero-text-box {
-        margin-top: 250px;
-    }
+	.hero-text-box {
+		margin-top: 250px;
+	}
 
-    .hero-text-box h1 {
-        font-size: 150%;
-    }
-    
-    .btn:link,
-    .btn:visited {
-        width: 70%;
-    }
+	.hero-text-box h1 {
+		font-size: 150%;
+	}
 
-    .project2, .project3, .project4, .project5 {
-        grid-column: 1 / -1;
-    }
+	.btn:link,
+	.btn:visited {
+		width: 70%;
+	}
 
-    .cite, .quote {
-        font-size: 80%;
-    }
+	.project2,
+	.project3,
+	.project4,
+	.project5 {
+		grid-column: 1 / -1;
+	}
+
+	.cite,
+	.quote {
+		font-size: 80%;
+	}
 }
 
 @media screen and (max-width: 375px) {
-    .btn:link,
-    .btn:visited {
-        width: 80%;
-    }
+	.btn:link,
+	.btn:visited {
+		width: 80%;
+	}
 }
