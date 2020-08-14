@@ -191,7 +191,7 @@ header nav ul li a:hover {
 
 .project1 {
 	grid-column: span 8;
-	background-image: url('./img/run-buddy.png');
+	background-image: url('../images/run-buddy.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 }

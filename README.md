@@ -24,7 +24,7 @@ https://reynolkb.github.io/portfolio/
 
 Once you've downloaded the code open the zipped folder in an IDE. 
 
-![Alt text](./resources/css/img/screenshot.png)
+![Alt text](./assets/images/screenshot.png)
 
 
 ## Credits
